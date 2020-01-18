@@ -82,13 +82,9 @@ body {
 
 /* Intro */
 
-.intro {
-    overflow: hidden;
-}
-
 .intro__wrap {
     display: flex;
-    height: 598px;
+    min-height: 605px;
 }
 
 .intro__info {
@@ -115,12 +111,12 @@ body {
 
 .btn--blue {
     color: #fff;
-    background: #3EADEC;
-    transition: background 0.2s linear;
+    background-color: #3EADEC;
+    transition: background-color 0.2s linear;
 }
 
 .btn--blue:hover {
-    background: rgb(7, 116, 179);
+    background-color: rgb(7, 116, 179);
 }
 
 .intro__baner {
@@ -130,8 +126,173 @@ body {
 
 .intro__image {
     position: absolute;
+    height: 100%;
     top: 0;
     left: 0;
-    object-fit: cover;
+    right: 0;
+    bottom: 0;
     z-index: 10;
+}
+
+.intro__icon {
+    position: absolute;
+    z-index: 5;
+    bottom: -107px;
+    left: 50%;
+    opacity: 0.1;
+}
+
+/* Story */
+
+.story__wrap {
+    display: flex;
+    margin-top: 110px;
+
+}
+
+.story__image {
+    object-fit: cover;
+}
+
+.story__content {
+    margin-left: 115px;
+    max-width: 540px;
+    position: relative;
+}
+
+.story__title {
+    font-family: 'Ibarra Real Nova', serif;
+    font-size: 57px;
+    line-height: 1.2;
+    color: #0E1D2C;
+    padding-top: 95px;
+}
+
+.story__text {
+    padding-top: 40px;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 1.65;
+    color: #0E1D2C;
+}
+
+.story__icon {
+    position: absolute;
+    left: -65px;
+    bottom: 0;
+    opacity: 0.1;
+}
+
+/* Our-offers */
+
+.our-offers {
+    margin-top: 150px;
+    background-color: #39B4FA;
+}
+
+.offer__item {
+    display: flex;
+    position: relative;
+}
+
+.offer__content {
+    width: 50%;
+}
+
+.offer__title {
+    font-family: 'Ibarra Real Nova', serif;
+    font-size: 57px;
+    line-height: 1.2;
+    color: #FFFFFF;
+    margin-top: 125px;
+    padding-bottom: 35px;
+    padding-right: 105px;
+}
+
+.offer__sub-title {
+    font-family: 'Ibarra Real Nova', serif;
+    font-size: 26px;
+    line-height: 1;
+    color: #FFFFFF;
+    opacity: 0.5;
+    padding-right: 105px;
+}
+
+.offer__about-offer-text {
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 1.65;
+    color: #FFFFFF;
+    padding-top: 35px;
+    padding-right: 105px;
+}
+
+.offer--btn {
+    margin-top: 55px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    background: transparent;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.offer__image {
+    width: 50%;
+    position: relative;
+    min-height: 685px;
+}
+
+.offer__picture {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+}
+
+.offer__buttons {
+    display: flex;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+}
+
+.previous::before {
+    content: "";
+    display: block;
+    transform: rotate(45deg);
+    width: 15px;
+    height: 15px;
+    border-left: 2px solid #3EADEC;
+    border-bottom: 2px solid #3EADEC;
+}
+
+.next::before {
+    content: "";
+    display: block;
+    transform: rotate(-45deg);
+    width: 15px;
+    height: 15px;
+    border-right: 2px solid #3EADEC;
+    border-bottom: 2px solid #3EADEC;
+}
+
+.offer__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 80px;
+    height: 70px;
+    background-color: #FFFFFF;
+    cursor: pointer;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+}
+
+.offer__btn:hover {
+    border: 2px solid #3EADEC;
 }
