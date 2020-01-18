@@ -1,0 +1,137 @@
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    /* font-family: 'Ibarra Real Nova', serif; */
+}
+
+.container {
+    width: 100%;
+    max-width: 1320px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.btn {
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 20px 57px;
+    cursor: pointer;
+    border-radius: 100px;
+    border: 0;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    background-color: rgba(128, 125, 125, 0.603);
+}
+
+/* Header */
+.header__wrap {
+    display: flex;
+    justify-content: flex-end;
+    padding: 55px 0;
+    position: relative;
+}
+
+.header__logo {
+    position: absolute;
+    left: 0;
+    top: 30px;
+}
+
+/* Navigation */
+
+.nav {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 22px;
+    text-transform: uppercase;
+}
+
+.nav__link {
+    text-decoration: none;
+    color: #0E1D2C;
+    margin-left: 50px;
+    transition: color 0.2s linear;
+}
+
+.nav__link:first-child {
+    margin-left: 0;
+}
+
+.nav__link:hover {
+    color: rgb(13, 16, 216);
+    text-decoration: underline;
+}
+
+/* Intro */
+
+.intro {
+    overflow: hidden;
+}
+
+.intro__wrap {
+    display: flex;
+    height: 598px;
+}
+
+.intro__info {
+    width: 50%;
+}
+
+.intro__title {
+    padding-top: 130px;
+    padding-right: 85px;
+    font-family: 'Ibarra Real Nova', serif;
+    font-size: 57px;
+    line-height: 1.2;
+    color: #0E1D2C;
+}
+
+.intro__subtitle {
+    font-weight: 300;
+    line-height: 1.6;
+    color: #0E1D2C;
+    padding-top: 35px;
+    padding-right: 240px;
+    margin-bottom: 40px;
+}
+
+.btn--blue {
+    color: #fff;
+    background: #3EADEC;
+    transition: background 0.2s linear;
+}
+
+.btn--blue:hover {
+    background: rgb(7, 116, 179);
+}
+
+.intro__baner {
+    position: relative;
+    width: 50%;
+}
+
+.intro__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: 10;
+}
