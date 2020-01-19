@@ -119,6 +119,11 @@ body {
     background-color: rgb(7, 116, 179);
 }
 
+.btn--blue:focus {
+    outline: none;
+    background-color: rgb(7, 116, 179);
+}
+
 .intro__baner {
     position: relative;
     width: 50%;
@@ -190,9 +195,12 @@ body {
     background-color: #39B4FA;
 }
 
+.offers__wrap {
+    position: relative;
+}
+
 .offer__item {
     display: flex;
-    position: relative;
 }
 
 .offer__content {
@@ -225,14 +233,24 @@ body {
     color: #FFFFFF;
     padding-top: 35px;
     padding-right: 105px;
+    margin-bottom: 55px;
 }
 
-.offer--btn {
-    margin-top: 55px;
+.transparent--btn {
     border: 1px solid rgba(255, 255, 255, 0.4);
     background: transparent;
     text-align: center;
     color: #FFFFFF;
+    transition: background-color 0.2s linear;
+}
+
+.transparent--btn:hover {
+    background-color: rgb(7, 116, 179);
+}
+
+.transparent--btn:focus {
+    outline: none;
+    background-color: rgb(7, 116, 179);
 }
 
 .offer__image {
@@ -295,4 +313,167 @@ body {
 
 .offer__btn:hover {
     border: 2px solid #3EADEC;
+}
+
+.offer__icon {
+    position: absolute;
+    right: 0;
+    bottom: -180px;
+    z-index: 5;
+    opacity: 0.1;
+}
+
+/* Start team */
+
+.team {
+    margin-top: 170px;
+}
+
+.team .container {
+    position: relative;
+}
+
+.team__title {
+    text-align: center;
+    margin-bottom: 95px;
+}
+
+.team__title-text {
+    font-family: 'Ibarra Real Nova', serif;
+    font-size: 57px;
+    line-height: 1.2;
+    color: #0E1D2C;
+}
+
+.team__wrap {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -40px;
+}
+
+.team__item {
+    width: 50%;
+    display: flex;
+    align-items: flex-start;
+    padding: 0 40px;
+    margin-bottom: 80px;
+}
+
+.team__photo {
+    border-radius: 100%;
+    display: block;
+    height: auto;
+}
+
+.team__item-info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 45px;
+}
+
+.team__name {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 1.25;
+    color: #0E1D2C;
+    padding-top: 40px;
+}
+
+.team__about {
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 1.65;
+    color: #0E1D2C;
+    padding-top: 25px;
+}
+
+.team__icon {
+    position: absolute;
+    bottom: 265px;
+    left: -165px;
+    z-index: 5;
+    opacity: 0.1;
+}
+
+/* Order */
+
+.order {
+    margin-top: 55px;
+    padding: 105px 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center, center;
+    position: relative;
+}
+
+.order .container {
+    position: relative;
+}
+
+.order--overlay {
+    background: #102531;
+    opacity: 0.45;
+    z-index: 5;
+}
+
+.order__wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 100;
+}
+
+.order__title {
+    max-width: 870px;
+    padding: 0 20px;
+    font-family: 'Ibarra Real Nova', serif;
+    font-size: 57px;
+    line-height: 1.2;
+    text-align: center;
+    margin-bottom: 50px;
+    color: #FFFFFF;
+}
+
+.order__icon {
+    position: absolute;
+    bottom: -256px;
+    right: 350px;
+    opacity: 0.1;
+}
+
+/* gallery */
+
+.gallery {
+    margin-top: 140px;
+}
+
+.gallery__title {
+    font-family: 'Ibarra Real Nova', serif;
+    font-size: 57px;
+    line-height: 1.2;
+    text-align: center;
+    color: #0E1D2C;
+    padding: 0 20px;
+}
+
+.gallery__wrap {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.gallery__item {
+    width: 25%;
+    position: relative;
+    border-right: 3px solid #fff;
+    border-bottom: 3px solid #fff;
+}
+
+.gallery__photo {
+    position: relative;
+    display: block;
+    max-width: 100%;
+    height: 100%;
+    z-index: 10;
 }
